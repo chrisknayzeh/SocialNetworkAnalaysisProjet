@@ -1,6 +1,6 @@
 import json
 import pandas as pd
-from config import PROFILES_DIR, COOKIE_LIST
+from config import PROFILES_DIR, COOKIE_LIST, DELIMITER
 from logger import get_logger
 
 # Logging setup
@@ -63,7 +63,7 @@ def load_agents_from_profiles():
 def load_agents_from_cookie_list():
     agents = {}
 
-    df = pd.read_csv(COOKIE_LIST, delimiter=";")
+    df = pd.read_csv(COOKIE_LIST, delimiter=DELIMITER)
 
     # Adjust column names here if needed
     for _, row in df.iterrows():
