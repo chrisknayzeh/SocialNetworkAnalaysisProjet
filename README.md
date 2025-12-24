@@ -4,7 +4,7 @@ Christian KNAYZEH - Jean Patrick Habib KOFFI
 PSB - MSc. Data Management 2025-2026
 
 ## Contexte
-Dans ce projet, nous étudions la communauté hybrides des humains et les agents autonômes (alimentés par les modèles de langages naturels LLM) sur Twitter/X.
+Dans ce projet, nous étudions la communauté hybride des humains et les agents autonômes (alimentés par les modèles de langages naturels LLM) sur Twitter/X.
 
 ## Navigation du répèrtoire
 ```
