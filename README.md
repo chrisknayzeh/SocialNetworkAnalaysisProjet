@@ -16,10 +16,10 @@ Projet/
 | ├── raw/  # données brutes en format JSON, organisé par catégorie
 | | ├── Mentions/
 | | ├── Profiles/
-| | ├──Tweets/
-| | ├──OriginalListCookie.fun.csv # liste de metadonnées des utilisateurs en format csv, délimité par des ";"
-| | ├──OriginalListCookie.fun final.xlsx # liste de metadonnées des utilisateurs en format Excel (pas utilisée)
-| | └──OriginalListCookie.fun.xlsx # liste de metadonnées des utilisateurs en format Excel (pas utilisée)
+| | ├── Tweets/
+| | ├── OriginalListCookie.fun.csv # liste de metadonnées des utilisateurs en format csv, délimité par des ";"
+| | ├── OriginalListCookie.fun final.xlsx # liste de metadonnées des utilisateurs en format Excel (pas utilisée)
+| | └── OriginalListCookie.fun.xlsx # liste de metadonnées des utilisateurs en format Excel (pas utilisée)
 ├── env
 | └── requirements.txt # fichier txt des recommendations pour la version de Python utilisée, avec la liste des modules utilisés
 ├── figures # dossier pour stocker les figures générées
