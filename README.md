@@ -25,7 +25,6 @@ Projet/
 ├── figures # dossier pour stocker les figures générées
 ├── logs
 | └── pipeline.log # log de l'ingestion des données brutes pour les transformer en listes d'arretes et noeuds
-├── notebooks
 ├── scripts
 | ├── build_nodes_edges.py
 | ├── config.py
