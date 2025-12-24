@@ -9,6 +9,7 @@ PROFILES_DIR = RAW_DATA / "profiles"
 TWEETS_DIR = RAW_DATA / "tweets"
 MENTIONS_DIR = RAW_DATA / "mentions"
 COOKIE_LIST = RAW_DATA / "OriginalListCookie.fun.csv"
+DELIMITER = ";"
 
 # Processed outputs
 NODES_FILE = PROCESSED_DATA / "nodes.csv"
