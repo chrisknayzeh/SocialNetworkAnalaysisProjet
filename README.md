@@ -16,10 +16,10 @@ Projet/
 | ├── raw/  # données brutes en format JSON, organisé par catégorie
 | | ├── Mentions/
 | | ├── Profiles/
-| | ├──Tweets/
-| | ├──OriginalListCookie.fun.csv # liste de metadonnées des utilisateurs en format csv, délimité par des ";"
-| | ├──OriginalListCookie.fun final.xlsx # liste de metadonnées des utilisateurs en format Excel (pas utilisée)
-| | └──OriginalListCookie.fun.xlsx # liste de metadonnées des utilisateurs en format Excel (pas utilisée)
+| | ├── Tweets/
+| | ├── OriginalListCookie.fun.csv # liste de metadonnées des utilisateurs en format csv, délimité par des ";"
+| | ├── OriginalListCookie.fun final.xlsx # liste de metadonnées des utilisateurs en format Excel (pas utilisée)
+| | └── OriginalListCookie.fun.xlsx # liste de metadonnées des utilisateurs en format Excel (pas utilisée)
 ├── env
 | └── requirements.txt # fichier txt des recommendations pour la version de Python utilisée, avec la liste des modules utilisés
 ├── figures # dossier pour stocker les figures générées
@@ -58,3 +58,6 @@ Les données brutes sont stockées sous format JSON dans le dossier `/data/raw`
   * `load_agents_from_profiles`: retrouve les agents autonômes dans les données brutes. Retourne un dictionnaire des agents autonômes
   * `load_agents_from_cookie_list`: retrouve les agents à partir du fichier `OriginalListCookie.fun.csv`. Retourne un dictionnaire des agents autonômes.
   * `load_all_agents`: fonction pour mettre à jour le dictionnaire des agents autonômes. Utilise une combinaison du fichier `OriginalListCookie.fun.csv` et les données brutes pour minimiser les valeurs manquantes.
+
+## Ingestion des données
+Pour ingester les données brutes, il faut (après la création du clone du répertoire Git localement) télécharger les données dans un dossier `raw` dans `/data`. Les noms des dossiers peuvent êtres adapté dans le script `config.py`
