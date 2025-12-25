@@ -39,5 +39,11 @@ def graph_stats(graph):
   print(f"  Q3:{q3_out}" )
   print("  Max:", max(out_degrees))
 
- 
-
+# describing engagement
+def describe_engagement(df, label):
+  print(f"\n===== {label} =====")
+  print("Count:", len(df))
+  print("Mean:", round(df['engagement_local'].mean(), 3))
+  print("Median:", round(df['engagement_local'].median(), 3))
+  print("Std:", round(df['engagement_local'].std(), 3))
+  print("Max:", round(df['engagement_local'].max(), 3))
