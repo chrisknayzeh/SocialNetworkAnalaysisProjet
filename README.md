@@ -30,7 +30,8 @@ Projet/
 | ├── config.py
 | ├── logger.py
 | ├── parse_interactions.py
-| └── parse_profiles.py
+| ├── parse_profiles.py
+| └── utils.py
 └── TP_Hybrids_communities.docx # Énoncé du projet!
 ```
 ## Les données brutes
@@ -58,6 +59,7 @@ Les données brutes sont stockées sous format JSON dans le dossier `/data/raw`
   * `load_agents_from_profiles`: retrouve les agents autonômes dans les données brutes. Retourne un dictionnaire des agents autonômes
   * `load_agents_from_cookie_list`: retrouve les agents à partir du fichier `OriginalListCookie.fun.csv`. Retourne un dictionnaire des agents autonômes.
   * `load_all_agents`: fonction pour mettre à jour le dictionnaire des agents autonômes. Utilise une combinaison du fichier `OriginalListCookie.fun.csv` et les données brutes pour minimiser les valeurs manquantes.
+* `utils.py` : script qui contient des helper functions (fonctions utilisées beaucoup pour éviter la répétition)
 
 ## Ingestion des données
 Pour ingester les données brutes, il faut (après la création du clone du répertoire Git localement) télécharger les données dans un dossier `raw` dans `/data`. Les noms des dossiers peuvent êtres adapté dans le script `config.py`
