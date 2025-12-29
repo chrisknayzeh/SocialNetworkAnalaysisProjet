@@ -57,3 +57,15 @@ def freeman_in_degree_centralization(graph):
     if n < 3:
         return np.nan
     return np.sum(in_deg.max() - in_deg) / ((n - 1) * (n - 2))
+
+def community_louvain(graph):
+# Convert directed graph to undirected for community detection
+  G_undirected = graph.as_undirected(
+      combine_edges=dict(weight="sum")
+  )
+
+  # Louvain community detection
+  communities = G_undirected.community_multilevel(
+      weights=G_undirected.es['weight']
+  )
+  return communities
