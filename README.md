@@ -31,6 +31,7 @@ Projet/
 | ├── parse_interactions.py
 | ├── parse_profiles.py
 | └── utils.py
+├── answers.ipynb  # Réponses au questions
 └── TP_Hybrids_communities.docx # Énoncé du projet!
 ```
 ## Les données brutes
