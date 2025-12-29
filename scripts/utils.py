@@ -69,3 +69,12 @@ def community_louvain(graph):
       weights=G_undirected.es['weight']
   )
   return communities
+
+def build_week_graph(graph, week_label, edge_list):
+    df_week = edge_list[edge_list['week'] == week_label]
+
+    users = set(df_week['source_id']).union(df_week['target_id'])
+    vertex_ids = [i for i, v in enumerate(graph.vs['user_id']) if v in users]
+
+    G_week = graph.subgraph(vertex_ids)
+    return G_week
