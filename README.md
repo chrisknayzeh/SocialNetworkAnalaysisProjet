@@ -21,8 +21,7 @@ Projet/
 | | ├── OriginalListCookie.fun final.xlsx # liste de metadonnées des utilisateurs en format Excel (pas utilisée)
 | | └── OriginalListCookie.fun.xlsx # liste de metadonnées des utilisateurs en format Excel (pas utilisée)
 ├── env
-| └── requirements.txt # fichier txt des recommendations pour la version de Python utilisée, avec la liste des modules utilisés
-├── figures # dossier pour stocker les figures générées
+| └── requirements.txt # fichier txt des recommendations pour la version de Python utilisée et les versions des modules utilisés.
 ├── logs
 | └── pipeline.log # log de l'ingestion des données brutes pour les transformer en listes d'arretes et noeuds
 ├── scripts
@@ -32,6 +31,7 @@ Projet/
 | ├── parse_interactions.py
 | ├── parse_profiles.py
 | └── utils.py
+├── answers.ipynb  # Réponses au questions
 └── TP_Hybrids_communities.docx # Énoncé du projet!
 ```
 ## Les données brutes
