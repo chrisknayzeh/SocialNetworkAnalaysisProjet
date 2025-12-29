@@ -1,3 +1,5 @@
+import numpy as np
+
 # Generate graph statistics
 
 def graph_stats(graph):
@@ -47,3 +49,11 @@ def describe_engagement(df, label):
   print("Median:", round(df['engagement_local'].median(), 3))
   print("Std:", round(df['engagement_local'].std(), 3))
   print("Max:", round(df['engagement_local'].max(), 3))
+
+# Freeman Centralization on In-Degree
+def freeman_in_degree_centralization(graph):
+    in_deg = np.array(graph.indegree())
+    n = graph.vcount()
+    if n < 3:
+        return np.nan
+    return np.sum(in_deg.max() - in_deg) / ((n - 1) * (n - 2))
