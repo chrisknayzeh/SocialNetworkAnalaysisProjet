@@ -1,4 +1,6 @@
 import numpy as np
+import re
+import pandas as pd
 
 # Generate graph statistics
 
@@ -70,6 +72,8 @@ def community_louvain(graph):
   )
   return communities
 
+# Function to build a graph for a week
+
 def build_week_graph(graph, week_label, edge_list):
     df_week = edge_list[edge_list['week'] == week_label]
 
@@ -78,3 +82,19 @@ def build_week_graph(graph, week_label, edge_list):
 
     G_week = graph.subgraph(vertex_ids)
     return G_week
+
+# Function to extract tokens
+
+def extract_tokens(text):
+    if not isinstance(text, str):
+        return []
+    # keep alphabetic tokens, length >= 3
+    return re.findall(r"\b[a-zA-Z]{3,}\b", text.lower())
+
+# Jaccard Similarity
+
+def jaccard_similarity(a, b):
+    if not a or not b:
+        return 0.0
+    return len(a & b) / len(a | b)
+
