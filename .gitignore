@@ -1,2 +1,4 @@
 data/raw/
 Réponses au questions.md
+data/processed/edges_for_gephi.csv
+scripts/__pycache__/
