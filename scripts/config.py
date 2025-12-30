@@ -14,6 +14,7 @@ DELIMITER = ";"
 # Processed outputs
 NODES_FILE = PROCESSED_DATA / "nodes.csv"
 EDGES_FILE = PROCESSED_DATA / "edges.csv"
+TWEETS_FILE = PROCESSED_DATA / "tweets.csv"
 
 # Ensure processed directory exists
 PROCESSED_DATA.mkdir(parents=True, exist_ok=True)
